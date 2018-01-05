@@ -1,0 +1,35 @@
+body {
+	margin: 0px;
+	overflow: hidden;
+}
+
+#header {
+	height: 100px;
+	background-image: url("flowers.jpg");
+}
+
+#navbar {
+	width: 200px;
+	height: calc(100vh - 200px);
+	float: left;
+	overflow: auto;
+	background-color: #cb67aa;
+
+}
+
+#main {
+	width: calc(100vw - 200px);
+	height: calc(100vh - 200px);
+	float: right;
+	overflow: auto;
+	background-color: #ffbfdf;
+}
+
+#footer {
+	height: 100px;
+	clear: both;
+	background-color: #800040;
+}
+a {
+	font-size: 20pt;
+}

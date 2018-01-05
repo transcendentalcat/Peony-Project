@@ -1,0 +1,138 @@
+body {
+	margin: 0px;
+	overflow: auto;
+}
+
+#header {
+	height: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	box-sizing: border-box;
+
+}
+.menu {
+	display: inline-block;
+	padding: 9px 12px;
+	background-clip: border-box;
+	border-right: thin;
+	transition-property: background-color, width, height;
+	transition-duration: 1s;
+}
+
+.menu:hover {
+	background-color: #ff66ff;
+	background-clip: border-box;
+	transform: scale(1.1, 1.1);
+	transition-property: background-color, width, height;
+	transition-duration: 0.5s;
+}
+
+.menu a {
+	color: #400040;
+	text-decoration: none;
+}
+
+#gallery {
+	//overflow: auto;
+	background-color: #e8dde1;
+	height: 500pt;
+
+}
+
+.flex {
+	height: 500pt;
+	//font-size: 0pt;
+	margin: 0;
+}
+
+#photos {
+	//width: 700px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#photos img {
+	max-width: 700px;
+	max-height: 550px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#photos_wrap {
+	width: 70%;
+	float: left;
+	height: 500pt
+	//left: 400px;
+	padding: 30pt 0pt;
+	box-sizing: border-box;
+
+}
+
+#photos {
+	position: relative;
+	text-align: center;
+	width: 80%;
+	right: 250pt;
+}
+
+
+#pr_button, #n_button {
+	width: 15%;
+	box-sizing: border-box;
+	padding: 200pt 0;
+	text-align: center;
+}
+
+#pr_button {
+	float: left;
+}
+
+#n_button {
+	float: right;
+}
+
+#prev, #next {
+	margin: 0;
+	vertical-align: middle;
+	width: 30pt;
+	height: 30pt;
+	opacity: 0.2;
+	transiton-property: opacity scale;
+	transition-duration: 1s;
+}
+
+#prev:hover {
+	opacity: 0.6;
+	transform: scale(1.5); ;
+}
+
+
+#next:hover {
+	opacity: 0.6;
+	transform: scale(1.5);
+}
+
+#footer {
+	height: 50px;
+	clear: both;
+	background-color: #800040;
+	background-clip: border-box;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	font-family: 'Dancing Script', cursive;
+}
+.socnet {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+#photos .showed {
+	opacity: 1;
+}

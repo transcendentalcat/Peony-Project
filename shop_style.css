@@ -1,0 +1,132 @@
+body {
+	margin: 0px;
+}
+
+#header {
+	height: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	box-sizing: border-box;
+
+}
+.menu {
+	display: inline-block;
+	padding: 9px 12px;
+	background-clip: border-box;
+	border-right: thin;
+	transition-property: background-color, width, height;
+	transition-duration: 1s;
+}
+
+.menu:hover {
+	background-color: #ff66ff;
+	background-clip: border-box;
+	transform: scale(1.1, 1.1);
+	transition-property: background-color, width, height;
+	transition-duration: 0.5s;
+}
+a {text-decoration: none}
+
+.menu a {
+	color: #400040;
+}
+
+#menu_bar {
+	min-height: calc(100vh - 100px);
+	width: 200px;
+	margin: 20px;
+	float: left;
+	color: #800040;
+	font-size: 16pt;
+	font-family: 'Dancing Script', cursive;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.menu_list a {
+	background-color: #800040;
+	display: block;
+	padding: 10px;
+	color: #fff;
+	border-bottom: 1px solid #e8dde1;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.menu_list a:hover {
+	background-color: #400040;
+}
+
+.menu_sublist {
+	position: relative;
+	width: 100%;
+}
+
+.menu_sublist:hover .menu_drop  {
+	opacity: 1;
+	width: 100%;
+	height: auto;
+	top: 0;
+	border-left: solid transparent;
+	transition-property: opacity, width;
+	transition-duration: 0.5s, 0.5s;
+}
+
+.menu_drop {
+	position: absolute;
+	left: 100%;
+	top: -1000px;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	transition-property: opacity, width;
+	transition-duration: 0.5s, 0.5s;
+	overflow: hidden;
+}
+
+.menu_drop li {
+	overflow: hidden;
+}
+
+.menu_sublist ::after{
+  content: " ";
+  position: absolute;
+  border: 5px solid;
+  border-color: transparent transparent transparent #e8dde1;
+  top: 1em;
+  right: 0.7em;
+  transition: 0.5s;
+}
+
+.menu_sublist:hover ::after{
+  transform: scaleX(-1);
+}
+
+#main {
+	min-height: calc(100vh - 100px);
+	background-color: #e8dde1;
+}
+
+#footer {
+	height: 50px;
+	clear: both;
+	background-color: #800040;
+	background-clip: border-box;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.socnet {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}

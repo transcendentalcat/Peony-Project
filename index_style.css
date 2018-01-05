@@ -1,0 +1,123 @@
+body {
+	margin: 0px;
+	overflow: hidden;
+}
+
+#header {
+	height: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20pt;
+	font-style: normal;
+	box-sizing: border-box;
+
+}
+.menu {
+	display: inline-block;
+	padding: 9px 12px;
+	background-clip: border-box;
+	border-right: thin;
+	transition-property: background-color, width, height;
+	transition-duration: 1s;
+}
+
+.menu:hover {
+	background-color: #ff66ff;
+	background-clip: border-box;
+	transform: scale(1.1, 1.1);
+	transition-property: background-color, width, height;
+	transition-duration: 0.5s;
+}
+
+.menu a {
+	color: #400040;
+	text-decoration: none;
+}
+
+#registration {
+	height: calc(100vh - 100px);
+	width: 350px;
+	float: left;
+	background-color: #e8dde1;
+	overflow: auto;
+	text-align: center;
+	color: #800040;
+	font-family: 'Dancing Script', cursive;
+}
+
+#registration p {
+	text-align: center;
+	font-size: 16pt;
+	color: #800040;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+#picture {
+	height: calc(100vh - 100px);
+	width: calc(100vw - 350px);
+	background-image: url("9.jpg");
+	background-size: cover;
+	float: right;
+	overflow: hidden;
+	padding: 55mm 10mm 5mm 10mm;
+	box-sizing: border-box;
+
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+#picture pre {
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+	font-size: 60pt;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: bottom;
+	animation: fadeInDown 1s;
+}
+
+#footer {
+	height: 50px;
+	clear: both;
+	background-color: #800040;
+	background-clip: border-box;
+	color: white;
+	font-size: 16pt;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.socnet {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 2s ;
+}
